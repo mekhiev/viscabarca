@@ -1,0 +1,156 @@
+:root {
+  --blau: #004D98;
+  --grana: #a50044;
+  --gold: #EDBB00;
+  --light: #f4f4f9;
+  --dark: #333333;
+  --pitch-green: #2E8B57
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+
+.header-section { 
+    background-color: var(--blau); 
+    padding: 15px 0; 
+    border-bottom: 3px solid var(--dark)
+}
+
+.header-content-wrapper { display: flex; justify-content: space-between; align-items: center; }
+
+.logo-container { display: flex; align-items: center; gap: 10px; font-size: 28px; font-weight: bold; color: var(--gold); }
+
+.small-logo-image { width: 35px; height: 35px; object-fit: contain; border-radius: 4px; background: transparent; }
+
+.navigation-list-items { list-style: none; display: flex; gap: 25px; }
+
+.navigation-list-items a { color: white; text-decoration: none; font-weight: 500; }
+
+.navigation-list-items a:hover { color: var(--gold); }
+
+
+.main-page-content { flex: 1; }
+
+.button-link {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--blau);
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer
+}
+
+.button-link:hover { background-color: #fff; transform: translateY(-2px); }
+
+
+.hero-banner {
+    background: linear-gradient(135deg, var(--blau) 50%, var(--grana) 50%);
+    height: 60vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    color: white;
+}
+
+.hero-banner h1 { font-size: 3.5rem; color: var(--gold); margin-bottom: 20px; }
+.hero-banner p { font-size: 1.2rem; margin-bottom: 30px; }
+
+.news-information-block { padding: 60px 0; }
+.news-information-block h2 { text-align: center; margin-bottom: 40px; color: var(--blau); font-size: 2.5rem; }
+
+.news-cards-wrapper { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+.news-card-link { text-decoration: none; color: inherit; }
+
+.news-article-card { background-color: white; padding: 25px; border-radius: 8px; width: 320px; border-top: 5px solid var(--grana); transition: 0.3s; height: 100%; }
+.news-article-card h3 { color: var(--blau); margin-bottom: 10px; }
+.news-article-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+
+
+.news-detailed-page-wrapper { padding: 40px 20px; max-width: 900px; }
+
+.news-detailed-page-wrapper h2 { color: var(--blau); margin-bottom: 25px; font-size: 2.3rem; }
+
+.news-main-image-container { width: 100%; max-height: 450px; overflow: hidden; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+
+.news-large-photo { width: 100%; height: 100%; object-fit: cover; display: block; background: #ddd; min-height: 250px; }
+
+.article-content-box { background: white; padding: 35px; border-radius: 8px; border-left: 5px solid var(--gold); box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+
+.article-content-box h3 { color: var(--grana); margin: 20px 0 10px 0; }
+.article-content-box p { margin-bottom: 15px; font-size: 1.1rem; line-height: 1.7; text-align: justify; }
+
+.article-content-box .button-link { margin-top: 20px; }
+
+
+.team-players-section { padding: 40px 0; }
+.team-players-section h2 { text-align: center; color: var(--blau); font-size: 2.5rem; }
+
+.section-subtitle-text { text-align: center; margin-bottom: 40px; color: #666; }
+
+.team-page-layout { display: flex; gap: 30px; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
+
+
+.substitutes-bench { background: white; padding: 25px; border-radius: 8px; width: 280px; border-left: 5px solid var(--grana); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+
+.head-coach-box { text-align: center; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 2px dashed #ddd; }
+
+.head-coach-box h3 { color: var(--blau); font-size: 1.2rem; margin-bottom: 15px; text-align: left; }
+
+.head-coach-photo { width: 120px; height: 150px; object-fit: cover; border-radius: 6px; background: #ccc; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
+.head-coach-name-text { font-weight: bold; color: var(--dark); font-size: 1.1rem; }
+
+.substitutes-bench h3 { color: var(--blau); font-size: 1.2rem; margin-bottom: 15px; }
+
+.substitutes-list { list-style: none; }
+.substitutes-list li { margin-bottom: 12px; font-weight: bold; display: flex; align-items: center; }
+
+.player-shirt-number { background: var(--blau); color: white; padding: 2px 8px; border-radius: 4px; margin-right: 12px; font-size: 0.85rem; }
+.back-button-container-wrapper { margin-top: 25px; }
+
+
+.football-pitch-container { display: flex; justify-content: center; }
+
+.football-pitch-field { background-color: var(--pitch-green); border: 3px solid white; position: relative; width: 500px; height: 700px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+
+.penalty-area-top-side, .penalty-area-bottom-side { position: absolute; left: 50%; transform: translateX(-50%); width: 220px; height: 110px; border: 2px solid rgba(255, 255, 255, 0.6); }
+
+.penalty-area-top-side { top: 0; border-top: none; }
+.penalty-area-bottom-side { bottom: 0; border-bottom: none; }
+
+.field-player { position: absolute; transform: translate(-50%, -50%); text-align: center; color: white; font-weight: bold; z-index: 10; }
+
+.field-player .player-shirt-number { background-color: var(--blau); border: 2px solid var(--gold); width: 35px; height: 35px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto 5px auto; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+.field-player .player-name-label { font-size: 0.8rem; background: rgba(0,0,0,0.6); padding: 2px 6px; border-radius: 4px; white-space: nowrap; }
+
+
+.goalkeeper-position { bottom: 5%; left: 50%; }
+.left-back-position { bottom: 20%; left: 15%; }
+.left-center-back-position { bottom: 18%; left: 38%; }
+.right-center-back-position { bottom: 18%; left: 62%; }
+.right-back-position { bottom: 20%; left: 85%; }
+.central-defensive-midfielder-left { bottom: 35%; left: 35%; }
+.central-defensive-midfielder-right { bottom: 35%; left: 65%; }
+.central-attacking-midfielder { bottom: 50%; left: 50%; }
+.left-winger-position { bottom: 72%; left: 20%; }
+.striker-position { bottom: 78%; left: 50%; }
+.right-winger-position { bottom: 72%; left: 80%; }
+
+
+.footer-section { background-color: var(--dark); color: white; text-align: center; padding: 20px 0; margin-top: auto }
